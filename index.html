@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>CSS Carousel</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.min.js"></script>
+    <script src="./assets/scripts/carousel.js"></script>
+</head>
+
+<body>
+    <div id="wrapper" style="text-align: center">
+        <div style="display: inline-block;">
+            <input checked id="one" name="multiples" type="radio" value="1" class="not-visible">
+            <label for="one" class="not-visible">1</label>
+            <input id="two" name="multiples" type="radio" value="2" class="not-visible">
+            <label for="two" class="not-visible">2</label>
+            <input id="three" name="multiples" type="radio" value="3" class="not-visible">
+            <label for="three" class="not-visible">3</label>
+            <input id="four" name="multiples" type="radio" value="4" class="not-visible">
+            <label for="four" class="not-visible">4</label>
+            <input id="five" name="multiples" type="radio" value="5" class="not-visible">
+            <label for="five" class="not-visible">5</label>
+            <input id="six" name="multiples" type="radio" value="6" class="not-visible">
+            <label for="six" class="not-visible">6</label>
+            <input id="seven" name="multiples" type="radio" value="7" class="not-visible">
+            <label for="seven" class="not-visible">7</label>
+            <input id="eight" name="multiples" type="radio" value="8" class="not-visible">
+            <label for="eight" class="not-visible" style="margin-bottom:30px">8</label>
+            <br />
+            <br />
+            <div class="carousel-loader" style="display:none;">
+                <img src="./assets/images/ajax-loader.gif" />
+            </div>
+            <div class="carousel-container">
+                <div class="member-carousel"></div>
+            </div>
+            <div class="carousel-button" style="visibility:visible;">
+                <button type="button" onclick="load();">Show carousel</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
